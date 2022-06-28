@@ -14,6 +14,8 @@ public class Avatars {
         this.DP = DP;
     }
 
+    public Avatars(){}
+
     public String getImageURL() {
         return imageURL;
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="200sp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="8dp"
@@ -10,11 +10,11 @@
     app:cardBackgroundColor="#36C186"
     android:padding="10sp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200sp"
         android:layout_marginLeft="16dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
 
         <TextView
@@ -40,35 +40,42 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.703"
             android:src="@drawable/creo_avatar"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btn_buy"
+        android:layout_width="111dp"
+        android:layout_height="28dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/dp_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toEndOf="@+id/item_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
 
-        <ImageButton
-            android:id="@+id/btn_buy"
-            android:layout_width="111dp"
-            android:layout_height="28dp"
-            android:backgroundTint="@android:color/transparent"
-            android:src="@drawable/dp_btn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.703"
-            app:layout_constraintStart_toEndOf="@+id/item_image"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.755" />
+    <ImageButton
+        android:id="@+id/btn_dp"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/buy_btn"
+        app:layout_constraintBottom_toTopOf="@+id/btn_buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toEndOf="@+id/item_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
 
-        <ImageButton
-            android:id="@+id/btn_dp"
-            android:layout_width="83dp"
-            android:layout_height="30dp"
-            android:backgroundTint="@android:color/transparent"
-            android:src="@drawable/buy_btn"
-            app:layout_constraintBottom_toTopOf="@+id/btn_buy"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.646"
-            app:layout_constraintStart_toEndOf="@+id/item_image"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.38" />
+</LinearLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
 
