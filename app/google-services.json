@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "115976385624",
+    "firebase_url": "https://test-5fed4-default-rtdb.firebaseio.com",
+    "project_id": "test-5fed4",
+    "storage_bucket": "test-5fed4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115976385624:android:a4b4cdcadccf3af1a7462d",
+        "android_client_info": {
+          "package_name": "com.creolin.shop_design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115976385624-seasbckr3a5cjsp2mqvjhahh1ql1pb22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwJ0oD68I63YPla_52_Un-yztSSeJMAls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115976385624-seasbckr3a5cjsp2mqvjhahh1ql1pb22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
