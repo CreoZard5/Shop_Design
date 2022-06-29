@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -19,6 +20,8 @@ public class ShopAdapter extends FirebaseRecyclerAdapter<Avatars, ShopAdapter.Sh
     public ShopAdapter(@NonNull FirebaseRecyclerOptions<Avatars> options) {
         super(options);
     }
+
+
 
 
     @Override
